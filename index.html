@@ -104,7 +104,7 @@ h1 .r{color:var(--red)}
 .dots{display:flex;gap:6px}
 .dots i{width:6px;height:6px;border-radius:99px;background:var(--line);transition:width .3s var(--ease),background .3s}
 .dots i.on{width:18px;background:var(--red)}
-.rv{display:grid;grid-auto-flow:column;grid-auto-columns:100%;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;align-items:start}
+.rv{display:grid;grid-auto-flow:column;grid-auto-columns:100%;gap:12px;overflow-x:auto;overflow-y:hidden;transition:height .45s var(--ease);scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;align-items:start}
 .rv::-webkit-scrollbar{display:none}
 .rc{scroll-snap-align:start;background:var(--cloud);border-radius:20px;padding:18px}
 .rc p{font-size:14px;line-height:1.5;color:var(--ink-2)}
@@ -218,6 +218,15 @@ h1 .r{color:var(--red)}
         <div class="top"><b>Отзывы клиник</b><span class="dots" id="dots"></span></div>
         <div class="rv" id="rv">
           <div class="rc"><p>Мы взяли полный аудит отдела продаж у Smile Sales Agency в лице Дмитрия Крюкова. Хотелось бы отметить профессиональное отношение к делу. С первых дней начали проверку по всем направлениям: заявки, работа колл-центра, администраторов, в целом прошлись по пути пациента. На начальных этапах была собрана вся нужная информация для оценки и дальнейшего внедрения эффективных инструментов. Разобрали CRM-систему, настроили и отрегулировали воронку, добавили шаблоны кейсов, видео-визитки врачей. Нашим сотрудникам проводилось обучение с выдачей учебного материала по модулям. Улучшили схему дожима первичных пациентов с помощью углублённого выявления потребностей. Чётко расписали схему действий координатора лечения, отработки возражений. В целом хотелось бы отметить положительное влияние данного аудита. С нами всегда были на связи, давали обратную связь.</p><p class="who"><b>Dr. Rau Dental Clinic</b><span>стоматология · Павлодар</span></p></div>
+          <div class="rc"><p>Если честно, шла на аудит с мыслью «ну что он мне нового скажет, я 18 лет в стоматологии». Дмитрий за три дня прослушал звонки, посидел на ресепшене физически и показал мне, что мои администраторы ничего не делают! Построили КЦ с нуля, ввели контроль, через месяц конверсия из звонка в запись выросла с 21 до 53%.</p><p class="who"><b>Айгерим Нурланова</b><span>собственник · Алматы</span></p></div>
+          <div class="rc"><p>Аудит был жёсткий. Дима не церемонится, прямо сказал, что у нас кураторы не продают лечение, а «озвучивают прайс и ждут». Было неприятно, но по делу. Самое ценное не отчёт, а то, что он разобрал с каждым куратором конкретные его разговоры. Не абстрактно. Спасибо!</p><p class="who"><b>Бауржан Серикович</b><span>главврач · Астана</span></p></div>
+          <div class="rc"><p>Не буду лукавить, не всё из рекомендаций мы внедрили, часть оказалась не под нашу модель. Но то, что внедрили, работает. Особенно система разбора звонков раз в неделю. Дмитрий честный, лишнего не обещает, цифрами не разбрасывается. Для рынка, где все обещают «х3 за месяц», это редкость.</p><p class="who"><b>Олег</b><span>собственник · Екатеринбург</span></p></div>
+          <div class="rc"><p>У нас две клиники, и мы думали, что проблема в рекламе, мало заявок. Дмитрий посмотрел CRM и сказал, что дело не в рекламе. Сейчас внедрили систему касаний, план на июль уже перевыполнили. Спасибо вам!</p><p class="who"><b>Динара</b><span>управляющая · Шымкент</span></p></div>
+          <div class="rc"><p>Главное, что понравилось: Дмитрий в стоматологии разбирается, не надо объяснять, что такое комплексный план и почему пациент на импланты думает полгода. Говорит на нашем языке. Отчёт получили на 40 с чем-то страниц, но там не вода, а конкретные вещи: кто, что, когда, сколько стоит исправить. Благодарю за работу.</p><p class="who"><b>Александр Кац</b><span>собственник · Караганда</span></p></div>
+          <div class="rc"><p>Делали аудит дистанционно, были сомнения, что из этого выйдет. Вышло нормально: записи звонков, доступ в CRM, два созвона с командой, и Дмитрий нашёл то, что мы 3 года не замечали. Можно без подробностей? Дмитрий, спасибо!</p><p class="who"><b>Марина Владимировна</b><span>главврач и совладелец</span></p></div>
+          <div class="rc"><p>Поначалу коллектив воспринял аудит в штыки, думали, пришли увольнять. Дмитрий это снял за первый день, объяснил, что он смотрит процессы, а не людей. В итоге никого не уволили, а два администратора сами попросили обучение. Через полтора месяца средний чек первичного пациента вырос примерно на 28%.</p><p class="who"><b>Мадина Ержанова</b><span>директор · Актобе</span></p></div>
+          <div class="rc"><p>Клиника молодая, всё строили на ощущениях. Дмитрий поставил структуру: воронка, точки контроля, кто за что отвечает. Теперь я хотя бы понимаю, куда уходят деньги и где теряем пациентов. Для региональной клиники это было очень нужно, спасибо.</p><p class="who"><b>Алишер, Dentalux</b><span>собственник · Туркестан</span></p></div>
+          <div class="rc"><p>Самое полезное: Дима дал готовые инструменты: чек-лист для администратора, таблицу контроля кураторов, скрипт на возврат пациентов. Можно было брать и внедрять на следующий день. Так и сделали. Хотели бы поработать на полном сопровождении, но мест нет)</p><p class="who"><b>Анна Кравцова</b><span>управляющая</span></p></div>
         </div>
       </div>
     </div>
@@ -343,17 +352,22 @@ h1 .r{color:var(--red)}
     a.href='https://wa.me/77066969446?text='+encodeURIComponent('Здравствуйте! Хочу аудит продаж клиники за 5 дней');
   });
 
-  /* отзывы: окошки листаются сами каждые 6 с, пауза при касании */
+  /* отзывы: окошки листаются сами (длинный отзыв висит дольше), пауза при касании */
   var rv=document.getElementById('rv'),cards=rv.children,dots=document.getElementById('dots'),cur=0,hold=0;
+  function fit(){rv.style.height=cards[cur].offsetHeight+'px'}
+  function mark(){[].forEach.call(dots.children,function(d,k){d.classList.toggle('on',k===cur)});fit()}
   if(cards.length>1){
     for(var i=0;i<cards.length;i++)dots.appendChild(document.createElement('i'));
-    function mark(){[].forEach.call(dots.children,function(d,k){d.classList.toggle('on',k===cur)})}
-    rv.addEventListener('scroll',function(){cur=Math.round(rv.scrollLeft/rv.clientWidth);mark()},{passive:true});
+    var st;rv.addEventListener('scroll',function(){clearTimeout(st);st=setTimeout(function(){var k=Math.round(rv.scrollLeft/(cards[0].offsetWidth+12));if(k!==cur){cur=k;mark()}},80)},{passive:true});
     ['pointerdown','touchstart','mouseenter'].forEach(function(ev){rv.addEventListener(ev,function(){hold=Date.now()},{passive:true})});
-    if(!reduce)setInterval(function(){
-      if(Date.now()-hold<8000||document.hidden)return;
-      cur=(cur+1)%cards.length;rv.scrollTo({left:cards[cur].offsetLeft-rv.offsetLeft,behavior:'smooth'});
-    },6000);
+    window.addEventListener('resize',fit);window.addEventListener('load',fit);
+    function next(){
+      setTimeout(function(){
+        if(Date.now()-hold>8000&&!document.hidden){cur=(cur+1)%cards.length;rv.scrollTo({left:cards[cur].offsetLeft-rv.offsetLeft,behavior:'smooth'});mark()}
+        next();
+      },Math.min(25000,3000+cards[cur].textContent.length*30));
+    }
+    if(!reduce)next();
     mark();
   }
 
